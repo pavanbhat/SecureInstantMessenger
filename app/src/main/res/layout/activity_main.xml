@@ -24,17 +24,14 @@
         android:text="Chat Window"
         android:layout_width="match_parent"
         android:layout_height="650px"
-        android:scrollbarAlwaysDrawVerticalTrack="true"
-        android:scrollbarStyle="insideInset"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
         android:id="@+id/chat_window"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textStyle="normal|bold"
-        android:textAlignment="center"
-        android:scrollbars="vertical"
+        android:textAlignment="gravity"
         android:freezesText="false"
-        android:isScrollContainer="false"
-        android:scrollbarTrackVertical="@android:style/Widget.DeviceDefault.ScrollView" />
+        android:isScrollContainer="false" />
 
     <Button
         android:layout_width="wrap_content"

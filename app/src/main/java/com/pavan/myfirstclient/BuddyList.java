@@ -66,7 +66,7 @@ public class BuddyList extends AppCompatActivity {
                 if(i > 0){*/
                 Intent s = new Intent(view.getContext(), Client.class);
                 s.putExtra("username", currentUser);
-                startActivityForResult(s, 102);
+                startActivityForResult(s, 101);
 //                }
             }
         });
