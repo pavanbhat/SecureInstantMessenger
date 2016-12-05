@@ -1,11 +1,17 @@
 package com.pavan.myfirstclient;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 import static android.R.attr.data;
 
@@ -30,6 +36,14 @@ public class AddUser extends AppCompatActivity {
         addBuddy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                FileOutputStream outputStream;
+                try {
+                    outputStream = openFileOutput(buddyName.toString(), Context.MODE_PRIVATE);
+                    outputStream.write("".getBytes());
+                    outputStream.close();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
                 Intent in = new Intent(view.getContext(), BuddyList.class);
                 in.putExtra("buddy", buddyName.getText());
                 startActivityForResult(in, 102);

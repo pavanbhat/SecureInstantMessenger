@@ -22,6 +22,7 @@ import static android.widget.AdapterView.*;
 public class BuddyList extends AppCompatActivity {
     String currentUser = "";
     ListView contact_list;
+    String path;
     private ArrayList<String> buddies = new ArrayList<>();
     public class  MyArrayAdapter <T> extends ArrayAdapter<String> {
         Context c;
