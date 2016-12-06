@@ -11,16 +11,22 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class Registration extends AppCompatActivity {
 
     // Button to register a user
     private Button register;
+
     // Placeholder for a registered username
     private EditText registeredName;
 
     private EditText registeredPass;
 
     private Button login;
+
+    public static ArrayList<String> listOfFriends = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

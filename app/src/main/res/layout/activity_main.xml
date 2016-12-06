@@ -30,6 +30,8 @@
         android:layout_alignParentStart="true"
         android:textStyle="normal|bold"
         android:textAlignment="gravity"
+        android:maxLines = "25"
+        android:scrollbars = "vertical"
         android:freezesText="false"
         android:isScrollContainer="false" />
 
