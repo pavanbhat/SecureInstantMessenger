@@ -26,7 +26,8 @@ public class Registration extends AppCompatActivity {
 
     private Button login;
 
-    public static ArrayList<String> listOfFriends = new ArrayList<>();
+    public static
+    ArrayList<String> listOfFriends = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
